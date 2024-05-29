@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de Programação com JS</title>
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <img src="" alt="" class="js-logo">
+            <li>Lógica de Programação</li>
+            <li>Conceitos</li>
+            <li>Exercícios</li>
+            <li>Materiais de Estudo</li>
+        </ul>
+    </nav>
+
+    <article class="doc-art">
+        <section class="doc-sect">
+            <h1>O que é um Algoritmo?</h1>
+            <p>Antes de falar sobre o algoritmo é interessante falar sobre a lógica. A lógica é a capacidade de raciocinar de maneira ordenada levando uma conclusão. Existem alguns tipos de lógica, como a lógica dedutiva, a lógica indutiva e a lógica abdutiva.</p>
+            <p>A lógica dedutiva é aquela que com base em uma preposição consegue extrair novas conclusões de acordo com exemplos. Por exemplo: Todo homem é anão. Sócrates é homem, logo Sócrates é anão</p>
+            <p>Já a lógica indutiva busca identificar uma regra geral ou um padrão com base em uma série de exemplos. Por exemplo: está chovendo agora de manhã, logo pode continuar chovendo à tarde</p>
+
+            <p>Por último a lógica abdutiva é a lógica qe se relaciona com a observação e a determinação de hipóteses, capaz de criar conhecimentos novos e realizar descobertas.<br>
+            Exemplo: Você vê uma pessoa com raiva na rua, assim você pode pensar nas inúmeras possibilidades que o deixariam com raiva (hipóteses), ao perceber que ele está com uma maleta e vestido de terno você pode pensar que ele está com raiva do trabalho, e isso é ainda mais confirmado quando ele está entrando em um prédio com agitação.</p>
+            
+            <p>Assim, podemos chegar ao conceito de algoritmo: </p>
+
+            <p class="concept">
+                Algoritmo é um conjunto finito de passos que levam a uma solução contra um problema.
+            </p>
+            
+            <h1>Saida de dados</h1>
+            <p>A saida de dados na lógica de computação é a capacidade de exibir dados, processados ou não, em um dispositivo periférico do computador</p>
+
+            <h1>Variáveis</h1>
+            <p>Variáveis são espaços endereçados no computador que armazenam valores, como números, booleanos, strings e outros valores.</p>
+
+            <h1>Entrada de dados</h1>
+            <p>A entrada de dados na lógica de programação são instruções que permitem o programa detectar dados externos, comumente inseridos por teclados ou sensores.</p>
+
+            <h1>Operadores</h1>
+
+            <p>Operadores são símbolos que possibilitam realizar operações entre operandos, como números ou caracteres. Os mais comuns são os operadores aritméticos (+, -, /, *), os operadores relacionais (&lt;, &gt;, &ne; =, >=, <=, etc.) e os operadores lógicos (&& E, || OU, ! NEGAÇÃO)</p>
+
+            <h1>Estruturas condicionais</h1>
+            <p>Estruturas condicionais são marcadores lógicos que modificam o fluxo de execução do programa, possibilitando saídas e resultados diferentes de acordo com as condições atendidas ou não atendidas.</p>
+            <p>Existem as estruturas condicionais simples, compostas, aninhadas e os switch-case (Escolha-caso).</p>
+        </section>
+        
+        <section>
+            <h1>JavaScript</h1>
+            <ul class="note-list">
+                <li>É uma linguagem tanto de backend como de frontend</li>
+                <li>Linguagem de propósito geral e multiparadigma, incluindo os paradigmas funcional e orientado a objetos.</li>
+                <li>Frameworks: React, Vue, Angular, Nodejs, etc.</li>
+                <li>Objetivo: criação de aplicativos web, aplicações mobile, interatividade com o usuário, criação de servidores web, interação com banco de dados, etc.</li>
+            </ul>
+
+            <h2>Primeiros comandos em JavaScript</h2>
+            <p>Para começar em Javascript, basta você ter um computador com um navegador instalado e um editor de texto de sua confiança como o VScode ou o Sublime Text.</p>
+            <p>Todo primeiro código de uma linguagem é o famoso "Hello, World!", um programa que exibe um dado na tela, normalmente por um terminal.</p>
+            <div class="code-block">
+                <code>console.log("Hello, World!")</code>
+                <code>document.write("Hello, World!")</code>
+
+            </div>
+            <p>Estes são comandos simples de saída de dados em Javascript. <code>console.log()</code> realiza a impressão de texto na console web, já o document.write realiza a escrita diretamente no documento html. Vale ressaltar que o código javascript precisa ser escrito na tag <code>&lt;script&gt;</code> ou chamado a partir dessa tag com o atributo <code>src</code>.</p>
+
+        </section>
+
+        <section class="doc-sect">
+            <h1>Variáveis em JavaScript</h1>    
+            <p>JavaScript é conhecida como uma linguagem fracamente e dinamicamente tipada. Isto significa que não há verificação de tipo antes da execução do código e possibilita que os tipos de dados de uma variável sejam alterados.</p>
+            <p>Assim, algumas formas de declarar variáveis estão presentes a seguir: </p>
+
+            <div class="code-block">
+                <code>x = 5;</code>
+                <code>x = "Salvador"</code>
+                <code>var nome = "João"</code>
+                <code>let possuiCartao = true;</code>
+                <code>const botao = document.querySelector(".botao")</code>
+            </div>
+            <p>Nesse caso, há 4 formas de se declarar uma variável em JavaScript. Na primeira e segunda linha, sem definir o escopo, também percebe-se a alteração do dado da variável para um do tipo string, algo totalmente possível em Javascript.</p>
+            <p>Em seguida, há a declaração por meio de var, let e const.</p>
+            <p>Será explicado mais adiante sobre a definição específica dessas palavras-chave, com uma exceção para const, que basicamente define que é uma constante, e não uma variável, não podendo ter seu valor alterado.</p>
+        </section>
+
+        <section class="doc-sect">
+            <h1>Operadores em JavaScript</h1>
+            <p>Os operadores em Javascript são semelhantes ao da linguagem Java e outras linguagens. A seguir os principais operadores da linguagem</p>
+
+            <h2>Operadores Aritméticos JS</h2>
+            <table>
+                <tr>
+                    <td>Operador</td>
+                    <td>Função</td>
+                </tr>
+                <tr>
+                    <td>"+"</td>
+                    <td>Soma ou concatena duas expressões. Se colocado diante de um número determina qual o seu sinal (positivo)</td>
+                </tr>
+                <tr>
+                    <td>"-"</td>
+                    <td>Subtrai duas expressões</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="doc-sect">
+            <h1>Bônus: </h1>
+            <ul class="note-list">
+                <li><code>numero.toFixed(2)</code>: realiza o arredondamento do número em questão para uma qunatidade de casas decimais</li>
+                <li><code>let soma = array.reduce(function (soma, i) {
+                return soma + i;    
+                })</code>: método .reduce executa uma série de operações em cada um dos elementos do array em questão, nesse caso está fazendo uma soma</li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+    </article>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
